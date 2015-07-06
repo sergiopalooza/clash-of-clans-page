@@ -1,0 +1,14 @@
+h1 {
+	font-family: Impact;
+}
+
+body {
+	background-image: url("../img/pizzabg.jpg");
+}
+
+.header {
+	color: white;
+	font-family: Impact;
+	font-size: 3em;	
+	text-align: center;
+}

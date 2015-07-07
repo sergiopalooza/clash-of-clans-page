@@ -1,8 +1,20 @@
 div {
 	font-family: 'Oswald';	
-	color: white;
+	color: #d5d4d0;
 
 }
+
+div .card {
+	width:50px; 
+	height:75px; 
+	background-color: #d5d4d0;
+	margin: 0 auto;
+	border-radius: 3px;
+	display: inline-block;
+	color: black;
+	line-height: 75px;
+}
+
 
 h1 {
 	font-family: Impact;
@@ -10,10 +22,15 @@ h1 {
 
 body {
 	background-image: url("../img/pizzabg.jpg");
+
+}
+
+p {
+	 margin: 0px; 
 }
 
 .header {
-	color: white;
+	color: #d5d4d0;
 	font-size: 3em;	
 	text-align: center;
 }
@@ -26,4 +43,8 @@ body {
 .tag {
 	text-align: center;
 	font-size: 2em;
+}
+
+.numbers {
+	font-size: 1em;
 }

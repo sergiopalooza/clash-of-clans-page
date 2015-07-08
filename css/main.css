@@ -26,6 +26,7 @@ h1 {
 
 body {
 	background-image: url("../img/pizzabg.jpg");
+	background-attachment: fixed;
 
 }
 

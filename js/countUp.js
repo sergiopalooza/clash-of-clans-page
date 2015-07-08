@@ -200,13 +200,13 @@ var CountUp = function(target, startVal, endVal, decimals, duration, options) {
 // numAnim.update(135);
 // with optional callback:
 // numAnim.start(someMethodToCallOnComplete);
-var options = {
-      useEasing : true, 
-      useGrouping : true, 
-      separator : ',', 
-      decimal : '.', 
-      prefix : '', 
-      suffix : '' 
-    };
-    var demo = new CountUp("warsWon", 0, 26, 0, 2.2, options);
-    demo.start();
+//var options = {
+//      useEasing : true, 
+//      useGrouping : true, 
+//      separator : ',', 
+//      decimal : '.', 
+//      prefix : '', 
+//      suffix : '' 
+//    };
+//    var demo = new CountUp("warsWon", 0, 26, 0, 2.2, options);
+//    demo.start();

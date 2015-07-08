@@ -4,13 +4,19 @@
   <title>DEFEND POP PUNK CLAN</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Oswald">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> <!-- bootstrap -->
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Oswald"> <!-- font -->
 
     <link rel="stylesheet" type="text/css" href="css/main.css"> 
+    <link rel="stylesheet" href="js/flipclock/flipclock.css">
+
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script language="javascript" type="text/javascript" src="js/countUp.js"></script>
+  <script language="javascript" type="text/javascript" src="js/jquery.countdown.js"></script>
+
+    
 
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -26,9 +32,9 @@
 
   <div class="row">
     <div class="stats">
-      <div class="col-xs-4"><p>25</p>WARS WON</div>
-      <div class="col-xs-4"><p>45</p>MEMBERS</div>
-      <div class="col-xs-4"><p>4</p>CLAN LEVEL</div>
+      <div class="col-xs-4"><p id="warsWon">0</p>WARS WON</div>
+      <div class="col-xs-4"><p id="members">45</p>MEMBERS</div>
+      <div class="col-xs-4"><p id="clanLevel">4</p>CLAN LEVEL</div>
     </div>
   </div>
   <br />
@@ -43,10 +49,38 @@
   </div>
   <br />
   <div class="row">
-    <div class="col-xs-4" style="text-align: center"><div class="card">10</div> <div class="card">23</div></div>
+    <div class="clock" id="clock"></div>
+    <!-- <div class="col-xs-4" style="text-align: center"><div class="card">10</div> <div class="card">23</div></div>
     <div class="col-xs-4" style="text-align: center"><div class="card">12</div> <div class="card">23</div></div>
-    <div class="col-xs-4" style="text-align: center"><div class="card">32</div> <div class="card">43</div></div>
+    <div class="col-xs-4" style="text-align: center"><div class="card">32</div> <div class="card">43</div></div> -->
   </div>  
  </div>
 </body>
 </html>
+
+<script language="javascript" type="text/javascript">
+  var options = {
+    useEasing : true, 
+    useGrouping : true, 
+    separator : ',', 
+    decimal : '.', 
+    prefix : '', 
+    suffix : '' 
+  };
+  var wars = new CountUp("warsWon", 0, 26, 0, 2.5, options);
+  var members = new CountUp("members", 0, 42, 0, 2.5, options);
+  var clanLevel = new CountUp("clanLevel", 0, 4, 0, 2.5, options);
+  wars.start();
+  members.start();
+  clanLevel.start();
+
+  $('#clock').countdown('2020/10/10', function(event) {
+  var $this = $(this).html(event.strftime(''
+    //+ '<span>%w</span> weeks '
+    + '<span>%d</span> days '
+    + '<span>%H</span> hr '
+    + '<span>%M</span> min '
+    + '<span>%S</span> sec'));
+});
+
+</script>

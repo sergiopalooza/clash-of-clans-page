@@ -1,10 +1,9 @@
 div {
 	font-family: 'Oswald';	
 	color: #d5d4d0;
-
 }
 
-div .card {
+/*div .card {
 	width:50px; 
 	height:75px; 
 	background-color: #d5d4d0;
@@ -13,7 +12,7 @@ div .card {
 	display: inline-block;
 	color: black;
 	line-height: 75px;
-}
+} */
 
 div .clock {
 	text-align: center;
@@ -53,3 +52,4 @@ p {
 .numbers {
 	font-size: 1em;
 }
+

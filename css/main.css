@@ -1,3 +1,12 @@
+html, body {
+ height: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: #d5d4d0;
+}
+
 div {
 	font-family: 'Oswald';	
 	color: #d5d4d0;
@@ -53,3 +62,12 @@ p {
 	font-size: 1em;
 }
 
+.footer {
+	
+	color: #d5d4d0;
+	font-size: 2em;	
+	text-align: center;
+	position: fixed;
+ 	bottom: 0;
+ 	width: 100%;
+}

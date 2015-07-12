@@ -67,7 +67,7 @@ p {
 	color: #d5d4d0;
 	font-size: 1em;	
 	text-align: center;
-	position: fixed;
+	/*position: fixed; */
  	bottom: 0;
  	width: 100%;
 }

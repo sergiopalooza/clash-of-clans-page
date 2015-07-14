@@ -69,15 +69,10 @@ p {
 	font-size: 1em;
 }
 
-/*.footer {
-	
-	font-color: #d5d4d0;
-	font-size: 1em;	
-	text-align: center;
-	position: absolute; 
- 	bottom: 0;
- 	width: 100%;
-} */
+.blurb {
+	padding-right: 30px;
+	padding-left: 30px;
+}
 
 .footer {
   position: absolute;

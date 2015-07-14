@@ -16,8 +16,6 @@
   <script language="javascript" type="text/javascript" src="js/countUp.js"></script>
   <script language="javascript" type="text/javascript" src="js/jquery.countdown.js"></script>
 
-    
-
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
 </head>
@@ -31,7 +29,6 @@
             </a>
           </div>
     </div>
-
   <div class="row">
     <div class="stats">
       <div class="col-xs-4" id="war"><p id="warsWon">0</p><span style="font-size: 16px">WARS WON</span></div>
@@ -52,23 +49,11 @@
   <br />
   <div class="row">
     <div class="clock" id="clock"></div>
-    <!-- <div class="col-xs-4" style="text-align: center"><div class="card">10</div> <div class="card">23</div></div>
-    <div class="col-xs-4" style="text-align: center"><div class="card">12</div> <div class="card">23</div></div>
-    <div class="col-xs-4" style="text-align: center"><div class="card">32</div> <div class="card">43</div></div> -->
   </div>
   <br />
-  <div class="blurb">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. </div>
+  <div class="blurb">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</div>
   <br />
-  <!-- <div class="row">
-          <div class="footer">
-            <div class="col-sm-3" style="background-color: #2b2b2b;"><a href="join.html">HOW TO JOIN</a></div>
-            <div class="col-sm-3" style="background-color: #2b2b2b;"><a href="about.html">ABOUT US</a></div>
-            <div class="col-sm-3" style="background-color: #2b2b2b;"><a href="resources.html">RESOURCES</a></div>
-            <div class="col-sm-3" style="background-color: #2b2b2b;"><a href="war.html">WAR</a></div>
-          </div>
 
-          <div class="col-xs-3">
-    </div>  -->
  </div>
  <footer class="footer">
       <div class="container">
@@ -81,7 +66,6 @@
       </div>
       </div>
     </footer>
-
 </body>
 </html>
 
@@ -101,7 +85,7 @@
   members.start();
   clanLevel.start();
 
-  var warTime= '2020/10/10';
+  var warTime= '2038/01/01 18:00:00';
 
   $('#clock').countdown(warTime, function(event) {
   var $this = $(this).html(event.strftime(''

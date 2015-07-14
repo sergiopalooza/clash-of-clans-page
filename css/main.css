@@ -52,6 +52,7 @@ p {
 	color: #d5d4d0;
 	font-size: 3em;	
 	text-align: center;
+	background-color: #2b2b2b;
 }
 
 .stats {
@@ -87,3 +88,10 @@ p {
   background-color: #2b2b2b;
   font-color: #d5d4d0;
   text-align: center;
+}
+
+.footer a {
+	display: inline-block;
+}
+
+

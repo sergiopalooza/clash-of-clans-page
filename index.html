@@ -31,9 +31,9 @@
     </div>
   <div class="row">
     <div class="stats">
-      <div class="col-xs-4" id="war"><p id="warsWon">0</p><span style="font-size: 16px">WARS WON</span></div>
-      <div class="col-xs-4"><p id="members">45</p><span style="font-size: 16px">MEMBERS</span></div>
-      <div class="col-xs-4"><p id="clanLevel">4</p><span style="font-size: 16px">CLAN LEVEL</span></div>
+      <div class="col-xs-4" id="war"><p id="warsWon"></p><span style="font-size: 16px">WARS WON</span></div>
+      <div class="col-xs-4"><p id="members"></p><span style="font-size: 16px">MEMBERS</span></div>
+      <div class="col-xs-4"><p id="clanLevel"></p><span style="font-size: 16px">CLAN LEVEL</span></div>
     </div>
   </div>
   <br />
@@ -78,8 +78,8 @@
     prefix : '', 
     suffix : '' 
   };
-  var wars = new CountUp("warsWon", 0, 26, 0, 2.5, options);
-  var members = new CountUp("members", 0, 42, 0, 2.5, options);
+  var wars = new CountUp("warsWon", 0, 27, 0, 2.5, options);
+  var members = new CountUp("members", 0, 39, 0, 2.5, options);
   var clanLevel = new CountUp("clanLevel", 0, 4, 0, 2.5, options);
   wars.start();
   members.start();

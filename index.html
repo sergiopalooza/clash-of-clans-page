@@ -4,20 +4,16 @@
   <title>DEFEND POP PUNK CLAN</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> <!-- bootstrap -->
-  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Oswald"> <!-- font -->
-
-    <link rel="stylesheet" type="text/css" href="css/main.css"> 
-    <link rel="stylesheet" href="js/flipclock/flipclock.css">
-
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  <script language="javascript" type="text/javascript" src="js/countUp.js"></script>
-  <script language="javascript" type="text/javascript" src="js/jquery.countdown.js"></script>
 
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> <!-- bootstrap -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> <!-- jquery -->
+  <link rel="stylesheet" type="text/css" href="css/main.css">  <!--custom css -->
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Oswald"> <!-- font -->
+
+  <script language="javascript" type="text/javascript" src="js/countUp.js"></script>
+  <script language="javascript" type="text/javascript" src="js/jquery.countdown.js"></script>
 </head>
 <body>
 
@@ -48,7 +44,8 @@
   </div>
   <br />
   <div class="row">
-    <div class="clock" id="clock"></div>
+    <div class="clock" id="tuesdayCountdown"></div>
+    <div class="clock" id="fridayCountdown"></div>
   </div>
   <br />
   <div class="blurb">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</div>
@@ -85,9 +82,10 @@
   members.start();
   clanLevel.start();
 
-  var warTime= '2038/01/01 18:00:00';
+  var friday= '2038/01/01 18:00:00';
+  var tuesday= '2038/01/05 18:00:00';
 
-  $('#clock').countdown(warTime, function(event) {
+  $('#fridayCountdown').countdown(friday, function(event) {
   var $this = $(this).html(event.strftime(''
     + '<span>%d</span> days '
     + '<span>%H</span> hr '
@@ -95,4 +93,46 @@
     + '<span>%S</span> sec'));
 });
 
+  $('#tuesdayCountdown').countdown(tuesday, function(event) {
+  var $this = $(this).html(event.strftime(''
+    + '<span>%d</span> days '
+    + '<span>%H</span> hr '
+    + '<span>%M</span> min '
+    + '<span>%S</span> sec'));
+});
+
+//check date grabs the day of the week and hides the appropriate countdown
+//This ensures that only one timer is shown each day
+function checkDate() {
+  var d = new Date().getDay();
+  if (d === 0 || d === 1 || d === 5 || d === 6){
+    $('#fridayCountdown').hide();
+  }
+  else {
+    $('#tuesdayCountdown').hide();
+  }
+  console.log(d);
+}
+checkDate();
 </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

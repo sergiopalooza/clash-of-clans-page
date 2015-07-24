@@ -2,18 +2,19 @@
 <html lang="en">
 <head>
   <title>DEFEND POP PUNK CLAN</title>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> <!-- bootstrap -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> <!-- jquery -->
   <link rel="stylesheet" type="text/css" href="css/main.css">  <!--custom css -->
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Oswald"> <!-- font -->
-
-  <script language="javascript" type="text/javascript" src="js/countUp.js"></script>
-  <script language="javascript" type="text/javascript" src="js/jquery.countdown.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> <!-- jquery -->  
+  <script src="js/countUp.js" async></script> <!-- stat count up-->  
+  <script src="js/jquery.countdown.js" async></script> <!-- countdown timer -->  
+  <script src="js/main.js" async></script> <!-- Custom js -->  
 </head>
 <body>
 
@@ -50,7 +51,6 @@
   <br />
   <div class="blurb">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</div>
   <br />
-
  </div>
  <footer class="footer">
       <div class="container">
@@ -66,55 +66,7 @@
 </body>
 </html>
 
-<script language="javascript" type="text/javascript">
-  var options = {
-    useEasing : true, 
-    useGrouping : true, 
-    separator : ',', 
-    decimal : '.', 
-    prefix : '', 
-    suffix : '' 
-  };
-  var wars = new CountUp("warsWon", 0, 27, 0, 2.5, options);
-  var members = new CountUp("members", 0, 39, 0, 2.5, options);
-  var clanLevel = new CountUp("clanLevel", 0, 4, 0, 2.5, options);
-  wars.start();
-  members.start();
-  clanLevel.start();
 
-  var friday= '2038/01/01 18:00:00';
-  var tuesday= '2038/01/05 18:00:00';
-
-  $('#fridayCountdown').countdown(friday, function(event) {
-  var $this = $(this).html(event.strftime(''
-    + '<span>%d</span> days '
-    + '<span>%H</span> hr '
-    + '<span>%M</span> min '
-    + '<span>%S</span> sec'));
-});
-
-  $('#tuesdayCountdown').countdown(tuesday, function(event) {
-  var $this = $(this).html(event.strftime(''
-    + '<span>%d</span> days '
-    + '<span>%H</span> hr '
-    + '<span>%M</span> min '
-    + '<span>%S</span> sec'));
-});
-
-//check date grabs the day of the week and hides the appropriate countdown
-//This ensures that only one timer is shown each day
-function checkDate() {
-  var d = new Date().getDay();
-  if (d === 0 || d === 1 || d === 5 || d === 6){
-    $('#fridayCountdown').hide();
-  }
-  else {
-    $('#tuesdayCountdown').hide();
-  }
-  console.log(d);
-}
-checkDate();
-</script>
 
 
 

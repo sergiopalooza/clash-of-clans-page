@@ -210,3 +210,7 @@ var CountUp = function(target, startVal, endVal, decimals, duration, options) {
 //    };
 //    var demo = new CountUp("warsWon", 0, 26, 0, 2.2, options);
 //    demo.start();
+
+
+
+

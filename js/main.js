@@ -1,6 +1,8 @@
 /*
     main.js
     by @sergiopalooza and @ericachase
+    This is a test commit
+    Erica is a nerd
 */
 
 /*----War countdown timer----*/

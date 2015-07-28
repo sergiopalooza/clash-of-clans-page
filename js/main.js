@@ -1,6 +1,6 @@
 /*
     main.js
-    by @sergiopalooza
+    by @sergiopalooza and @ericachase
 */
 
 /*----War countdown timer----*/

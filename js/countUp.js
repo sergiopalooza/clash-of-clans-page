@@ -1,6 +1,7 @@
 /*
     countUp.js
     by @inorganik
+    by @sergiopalooza and @ericachase
 */
 
 // target = id of html element or var of previously selected html element where counting occurs

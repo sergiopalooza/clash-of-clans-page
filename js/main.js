@@ -13,9 +13,9 @@
     prefix : '', 
     suffix : '' 
   };
-  var wars = new CountUp("warsWon", 0, 27, 0, 2.5, options);
+  var wars = new CountUp("warsWon", 0, 31, 0, 2.5, options);
   var members = new CountUp("members", 0, 39, 0, 2.5, options);
-  var clanLevel = new CountUp("clanLevel", 0, 4, 0, 2.5, options);
+  var clanLevel = new CountUp("clanLevel", 0, 5, 0, 2.5, options);
   wars.start();
   members.start();
   clanLevel.start();

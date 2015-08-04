@@ -1,2 +1,4 @@
 # clash-of-clans-page
-Landing page for Defend Pop Punk clan
+Defend Pop Punk Clan
+Landing page for Clash of Clans group. 
+Find us in the clan search under DEFEND POP PUNK or the tag #JQUCVOC

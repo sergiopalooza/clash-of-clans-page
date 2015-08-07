@@ -1,7 +1,7 @@
 html {
  /*height: 100%;*/
  position: relative;
-  min-height: 100%;
+ min-height: 100%;
 }
 
 body {
@@ -42,13 +42,19 @@ h1 {
 body {
 	background-image: url("../img/pizzabg.jpg");
 	background-attachment: fixed;
-
 }
 
 p {
 	 margin: 0px; 
 }
 
+ul {
+	color: #d5d4d0;
+	font-size: 1.25em;
+}
+ul li { 
+	padding: 5px 0px; 
+}
 .header {
 	color: #d5d4d0;
 	font-size: 3em;	
@@ -73,7 +79,10 @@ p {
 .blurb {
 	padding-right: 30px;
 	padding-left: 30px;
-	font-size: 1em;
+	font-size: 1.5em;
+	text-align: center;
+	color: #d5d4d0;
+
 }
 
 .footer {
@@ -82,7 +91,7 @@ p {
   width: 100%;
   /* Set the fixed height of the footer here */
   background-color: #2b2b2b;
-  font-color: #d5d4d0;
+  color: #d5d4d0;
   text-align: center;
   vertical-align: middle;
 }

@@ -29,9 +29,10 @@ div {
 	line-height: 75px;
 } */
 
-div .clock {
+.clock {
 	text-align: center;
 	font-size: 2em;
+	margin-top: -15px;
 }
 
 h1 {
@@ -86,5 +87,11 @@ p {
   vertical-align: middle;
 }
 
+.col-xs-4 {
+	font-size: 1.5em;
+	padding-bottom: 15px;
+}
 
-
+.statLabel {
+	font-size: 16px;
+}

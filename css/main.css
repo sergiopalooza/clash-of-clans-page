@@ -51,7 +51,7 @@ p {
 
 ul li { 
 	padding: 5px 0px; 
-	text-align: left;
+	text-align: center;
 	font-size: 1em;
 }
 .header {
@@ -80,6 +80,15 @@ ul li {
 	padding-left: 30px;
 	font-size: 1.5em;
 	text-align: center;
+	color: #d5d4d0;
+
+}
+.blurbCenter {
+	margin: 0 auto;
+	padding-right: 30px;
+	padding-left: 30px;
+	font-size: 1.5em;
+	text-align: left;
 	color: #d5d4d0;
 
 }

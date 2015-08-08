@@ -51,6 +51,6 @@ function checkDate() {
     $('#tuesdayCountdown').hide(); //else show the countdown for tuesday
   }
 }
-checkDate();
+//checkDate(); uncomment when we countdown for both days again
 
 

@@ -6,7 +6,6 @@ html {
 
 body {
 	margin-bottom: 60px;
-	line-height:2.6;
 	background-image: url("../img/pizzabg.jpg");
 	background-attachment: fixed;
 }
@@ -117,12 +116,15 @@ ul li {
 	font-size: 16px;
 }
 
+.section {
+		line-height:2.6;
+}
 #section1 {
-	margin-top:-50px; padding-top:50px;height:400px;color: #d5d4d0; background-color: #c38f37;
+	margin-top:-50px; padding-top:50px;height:400px;color: #d5d4d0; background-color: #5f5e66;
 }
 
 #section2 {
-	padding-top:50px;height:400px;color: #d5d4d0; background-color: #5f5e66;
+	padding-top:50px;height:400px;color: #d5d4d0; background-color: #c38f37;
 }
 
 #section3 {

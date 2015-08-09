@@ -6,6 +6,9 @@ html {
 
 body {
 	margin-bottom: 60px;
+	line-height:2.6;
+	background-image: url("../img/pizzabg.jpg");
+	background-attachment: fixed;
 }
 
 a {
@@ -22,12 +25,6 @@ div {
 	color: #d5d4d0;
 }
 
-
-body {
-	background-image: url("../img/pizzabg.jpg");
-	background-attachment: fixed;
-}
-
 p {
 	 margin: 0px; 
 }
@@ -35,7 +32,6 @@ p {
 
 ul li { 
 	padding: 5px 0px; 
-	text-align: center;
 	font-size: 1em;
 }
 
@@ -107,6 +103,11 @@ ul li {
   vertical-align: middle;
 }
 
+.container-fluid {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
 .col-xs-4 {
 	font-size: 1.5em;
 	padding-bottom: 15px;
@@ -117,21 +118,17 @@ ul li {
 }
 
 #section1 {
-	padding-top:50px;height:500px;color: #d5d4d0; background-color: #ec971f;
+	margin-top:-50px; padding-top:50px;height:400px;color: #d5d4d0; background-color: #c38f37;
 }
 
 #section2 {
-	padding-top:50px;height:500px;color: #d5d4d0; background-color: #2b2b2b;
+	padding-top:50px;height:400px;color: #d5d4d0; background-color: #5f5e66;
 }
 
 #section3 {
-	padding-top:50px;height:500px;color: #d5d4d0; background-color: #c9302c;
+	padding-top:50px;height:400px;color: #d5d4d0; background-color: #9d2831;
 }
 
 #section41 {
-	padding-top:50px;height:500px;color: #d5d4d0; background-color: #2b2b2b;
-}
-
-#section42 {
-	padding-top:50px;height:500px;color: #d5d4d0; background-color: #ec971f;
+	margin-bottom:-10; padding-top:50px;height:400px;color: #d5d4d0; background-color: #5f5e66;
 }

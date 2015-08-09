@@ -13,6 +13,10 @@ a {
 	color: #d5d4d0;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 div {
 	font-family: 'Oswald';	
 	color: #d5d4d0;

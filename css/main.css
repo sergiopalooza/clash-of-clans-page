@@ -22,23 +22,6 @@ div {
 	color: #d5d4d0;
 }
 
-/*div .card {
-	width:50px; 
-	height:75px; 
-	background-color: #d5d4d0;
-	margin: 0 auto;
-	border-radius: 3px;
-	display: inline-block;
-	color: black;
-	line-height: 75px;
-} */
-
-.clock {
-	text-align: center;
-	font-size: 2em;
-	margin-top: -15px;
-}
-
 h1 {
 	font-family: Impact;
 }
@@ -58,6 +41,25 @@ ul li {
 	text-align: center;
 	font-size: 1em;
 }
+
+/*div .card {
+	width:50px; 
+	height:75px; 
+	background-color: #d5d4d0;
+	margin: 0 auto;
+	border-radius: 3px;
+	display: inline-block;
+	color: black;
+	line-height: 75px;
+} */
+
+.clock {
+	text-align: center;
+	font-size: 2em;
+	margin-top: -15px;
+}
+
+
 .header {
 	color: #d5d4d0;
 	font-size: 3em;	
@@ -115,4 +117,24 @@ ul li {
 
 .statLabel {
 	font-size: 16px;
+}
+
+#section1 {
+	padding-top:50px;height:500px;color: #d5d4d0; background-color: #ec971f;
+}
+
+#section2 {
+	padding-top:50px;height:500px;color: #d5d4d0; background-color: #2b2b2b;
+}
+
+#section3 {
+	padding-top:50px;height:500px;color: #d5d4d0; background-color: #c9302c;
+}
+
+#section41 {
+	padding-top:50px;height:500px;color: #d5d4d0; background-color: #2b2b2b;
+}
+
+#section42 {
+	padding-top:50px;height:500px;color: #d5d4d0; background-color: #ec971f;
 }

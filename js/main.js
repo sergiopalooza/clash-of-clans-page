@@ -13,8 +13,8 @@
     prefix : '', 
     suffix : '' 
   };
-  var wars = new CountUp("warsWon", 0, 31, 0, 2.5, options);
-  var members = new CountUp("members", 0, 37, 0, 2.5, options);
+  var wars = new CountUp("warsWon", 0, 32, 0, 2.5, options);
+  var members = new CountUp("members", 0, 30, 0, 2.5, options);
   var clanLevel = new CountUp("clanLevel", 0, 5, 0, 2.5, options);
   wars.start();
   members.start();
@@ -22,7 +22,7 @@
 
 /*----War countdown timer----*/
 var friday= '2038/01/01 18:00:00'; //Using 2038 because days/weeks line up perfectly with 2015
-var tuesday= '2038/01/05 18:00:00'; //This works because we cut off the year to get a weekly timer
+var tuesday= '2038/01/05 17:00:00'; //This works because we cut off the year to get a weekly timer
 
   $('#fridayCountdown').countdown(friday, function(event) {
   var $this = $(this).html(event.strftime(''

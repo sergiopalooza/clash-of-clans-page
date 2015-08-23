@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="myApp">
 <head>
   <title>DEFEND POP PUNK CLAN</title>
 
@@ -14,56 +14,38 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> <!-- jquery -->  
   <script src="js/countUp.js" async></script> <!-- stat count up-->  
   <script src="js/jquery.countdown.js" async></script> <!-- countdown timer -->  
-</head>
-<body>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28/angular.min.js"></script> <!-- angular -->
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script> <!-- ng route -->
+  <script src="js/app.js"></script>
 
-<div class="container-fluid">
+</head>
+<body ng-controller="mainController">
+
+  <div class="container-fluid">
     <div class="row">
-          <div class="header">
-            <a href="index.html">
-              <div class="col-sm-12" style="background-color: #2b2b2b;"><img src="img/logonew.png" alt="DEFEND POP PUNK"></div>
-            </a>
-          </div>
-    </div>
-  <div class="row">
-    <div class="stats">
-      <div class="col-xs-4"><p id="warsWon">0</p><p class="statLabel">WARS WON</p></div>
-      <div class="col-xs-4"><p id="members">0</p><p class="statLabel">MEMBERS</p></div>
-      <div class="col-xs-4"><p id="clanLevel">0</p><p class="statLabel">CLAN LEVEL</p></div>
-    </div>
+      <div class="header">
+        <a href="index.html">
+          <div class="col-sm-12" style="background-color: #2b2b2b;"><img src="img/logonew.png" alt="DEFEND POP PUNK"></div>
+        </a>
+      </div>
   </div>
-  <br />
-  <div class="row">
-    <div class="tag">
-      <div class="col-sm-12" >CLAN TAG: #JQUCVOC</div>
-    </div>
+
+  <div id="main">
+  <!-- where the content gets injected -->
+  <div ng-view>  {{ message }}
+</div>
   </div>
-  <br />
-  <div class="row">
-    <div class="col-sm-12" style="text-align: center">Next open war will begin in :</div>
-  </div>
-  <br />
-  <div class="row">
-    <div class="clock" id="tuesdayCountdown"></div>
-   <!-- <div class="clock" id="fridayCountdown"></div>  Temporarily not counting down to competitive war-->
-  </div>
-  <br />
-  <p class="blurb">Defend Pop Punk is looking for some additional members to expand our already established clan. We're a cool and casual group but also we like to take war seriously.</p>
-  <br />
-  <p class="blurb">If you would literally die for pizza and/or pop punk, check us out on Clash of Clans.</p>
- </div>
- <br />
+
  <footer class="footer">
       <div class="container">
         <div class="row">
           <div class="col-xs-3"><a href="join.html">JOIN</a></div>
-          <div class="col-xs-3"><a href="about.html">ABOUT</a></div>
+          <div class="col-xs-3"><a href="#about">ABOUT</a></div>
           <div class="col-xs-3"><a href="resources.html">RESOURCES</a></div>
-          <div class="col-xs-3"><a href="war.html">WAR</a></div>
+          <div class="col-xs-3"><a href="#war">WAR</a></div>
         </div>
       </div>
-      </div>
-    </footer>
+  </footer>
   <script src="js/main.js" async></script> <!-- Custom js -->  
 </body>
 </html>

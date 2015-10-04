@@ -46,18 +46,13 @@ ul li {
 	line-height: 75px;
 } */
 
+.row {
+	margin-right: 0px;
+}
 .clock {
 	text-align: center;
 	font-size: 2em;
 	margin-top: -15px;
-}
-
-
-.header {
-	color: #d5d4d0;
-	font-size: 3em;	
-	text-align: center;
-	background-color: #2b2b2b;
 }
 
 .stats {
@@ -101,6 +96,14 @@ ul li {
   color: #d5d4d0;
   text-align: center;
   vertical-align: middle;
+}
+
+.header {
+	top: 0;
+	width: 100%;
+	color: #d5d4d0;
+	text-align: center;
+	background-color: #2b2b2b;
 }
 
 .container-fluid {

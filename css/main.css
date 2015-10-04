@@ -6,7 +6,6 @@ html {
 
 body {
 	margin-bottom: 20px;
-	margin-right: 15px;
 	background-image: url("../img/pizzabg.jpg");
 	background-attachment: fixed;
 }
@@ -35,16 +34,6 @@ ul li {
 	font-size: 1em;
 }
 
-/*div .card {
-	width:50px; 
-	height:75px; 
-	background-color: #d5d4d0;
-	margin: 0 auto;
-	border-radius: 3px;
-	display: inline-block;
-	color: black;
-	line-height: 75px;
-} */
 
 .row {
 	margin-right: 0px;
@@ -99,7 +88,6 @@ ul li {
 }
 
 .header {
-	top: 0;
 	width: 100%;
 	color: #d5d4d0;
 	text-align: center;
@@ -140,6 +128,4 @@ ul li {
 #section4 {
 	padding-left: 10px; padding-top:50px;height:550px;color: #d5d4d0; background-color: #5f5e66;
 }
-button {
-	margin-left: 10px;
-}
+

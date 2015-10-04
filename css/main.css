@@ -1,7 +1,6 @@
 html {
- /*height: 100%;*/
- position: relative;
- min-height: 100%;
+	position: relative;
+	min-height: 100%;
 }
 
 body {
@@ -28,16 +27,15 @@ p {
 	 margin: 0px; 
 }
 
-
-ul li { 
+li { 
 	padding: 5px 0px; 
 	font-size: 1em;
 }
 
-
 .row {
 	margin-right: 0px;
 }
+
 .clock {
 	text-align: center;
 	font-size: 2em;
@@ -64,27 +62,6 @@ ul li {
 	font-size: 1.5em;
 	text-align: center;
 	color: #d5d4d0;
-
-}
-.blurbCenter {
-	margin: 0 auto;
-	padding-right: 30px;
-	padding-left: 30px;
-	font-size: 1.5em;
-	text-align: left;
-	color: #d5d4d0;
-
-}
-
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  background-color: #2b2b2b;
-  color: #d5d4d0;
-  text-align: center;
-  vertical-align: middle;
 }
 
 .header {
@@ -92,6 +69,16 @@ ul li {
 	color: #d5d4d0;
 	text-align: center;
 	background-color: #2b2b2b;
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background-color: #2b2b2b;
+	color: #d5d4d0;
+	text-align: center;
+	vertical-align: middle;
 }
 
 .container-fluid {
@@ -110,9 +97,8 @@ ul li {
 
 .section {
 	line-height:1.5em;
-	/*margin-right: -15px;*/
-
 }
+
 #section1 {
 	padding-left: 10px; margin-top:-50px; padding-top:50px;height:400px;color: #d5d4d0; background-color: #5f5e66;
 }
@@ -128,4 +114,3 @@ ul li {
 #section4 {
 	padding-left: 10px; padding-top:50px;height:550px;color: #d5d4d0; background-color: #5f5e66;
 }
-

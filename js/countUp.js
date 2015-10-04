@@ -1,7 +1,6 @@
 /*
     countUp.js
     by @inorganik
-    by @sergiopalooza and @ericachase
 */
 
 // target = id of html element or var of previously selected html element where counting occurs
@@ -195,22 +194,6 @@ var CountUp = function(target, startVal, endVal, decimals, duration, options) {
     self.printValue(self.startVal);
 };
 
-// Example:
-// var numAnim = new countUp("SomeElementYouWantToAnimate", 0, 99.99, 2, 2.5);
-// numAnim.start();
-// numAnim.update(135);
-// with optional callback:
-// numAnim.start(someMethodToCallOnComplete);
-//var options = {
-//      useEasing : true, 
-//      useGrouping : true, 
-//      separator : ',', 
-//      decimal : '.', 
-//      prefix : '', 
-//      suffix : '' 
-//    };
-//    var demo = new CountUp("warsWon", 0, 26, 0, 2.2, options);
-//    demo.start();
 
 
 
